@@ -1,4 +1,4 @@
-import { ArrowRight, Clock } from 'lucide-react';
+import { ArrowRight, Clock, Download, GraduationCap, Presentation } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { PageHeader } from '../components/shared/PageHeader';
@@ -9,6 +9,18 @@ export function WorkshopsPage() {
   return (
     <div className="page">
       <PageHeader eyebrow="Com'Lab" title={t('workshops.title')} intro={t('workshops.intro')} />
+      <div className="container split workshop-audiences">
+        <section className="card audience-card facilitator-card">
+          <Presentation color="var(--blue)" />
+          <h2>{t('workshops.facilitatorTitle')}</h2>
+          <p>{t('workshops.facilitatorIntro')}</p>
+        </section>
+        <section className="card audience-card student-card">
+          <GraduationCap color="var(--teal)" />
+          <h2>{t('workshops.studentTitle')}</h2>
+          <p>{t('workshops.studentIntro')}</p>
+        </section>
+      </div>
       <div className="container grid">
         {workshops.map((w) => (
           <article className="card" key={w.id}>
@@ -17,9 +29,20 @@ export function WorkshopsPage() {
             </span>
             <h2>{localize(w.title, i18n.language)}</h2>
             <p>{localize(w.description, i18n.language)}</p>
-            <Link className="button primary" to={`/workshops/${w.slug}`}>
-              {t('common.open')} <ArrowRight size={17} />
-            </Link>
+            <p className="resource-summary">
+              <strong>{w.resources.length}</strong> {t('workshops.resourceCount')} ·{' '}
+              {w.resources.map((resource) => resource.format).join(' + ')}
+            </p>
+            <div className="actions">
+              <Link className="button primary" to={`/workshops/${w.slug}`}>
+                {t('common.open')} <ArrowRight size={17} />
+              </Link>
+              {w.resources[0] && (
+                <a className="button" href={w.resources[0].fileUrl} download>
+                  <Download size={17} /> {w.resources[0].format}
+                </a>
+              )}
+            </div>
           </article>
         ))}
       </div>

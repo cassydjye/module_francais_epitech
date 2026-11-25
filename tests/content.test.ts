@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import { projects } from '../src/data/projects';
 import { tabooCards } from '../src/data/taboo-cards';
+import { workshops } from '../src/data/workshops';
 import { average, csvCell } from '../src/lib/content';
 import { resources } from '../src/i18n/resources';
 describe('content', () => {
@@ -17,6 +18,16 @@ describe('content', () => {
     expect(new Set(projects.map((x) => x.slug)).size).toBe(9);
   });
   it('has a complete taboo deck', () => expect(tabooCards.length).toBeGreaterThanOrEqual(24));
+  it('publishes the four workshop paths and their resources', () => {
+    expect(workshops).toHaveLength(4);
+    expect(workshops.map((workshop) => workshop.slug)).toEqual([
+      'module-introduction',
+      'professional-email',
+      'explaining-technical-concepts',
+      'responsible-ai-writing',
+    ]);
+    expect(workshops.every((workshop) => workshop.resources.length > 0)).toBe(true);
+  });
   it('protects CSV exports from formulas', () =>
     expect(csvCell('=IMPORTXML()')).toBe('"\'=IMPORTXML()"'));
   it('keeps translation structures aligned', () =>

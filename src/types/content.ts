@@ -29,7 +29,16 @@ export interface Workshop {
   objectives: LocalizedText[];
   steps: LocalizedText[];
   tools: string[];
-  sourceFile: string;
+  resources: WorkshopResource[];
+}
+export interface WorkshopResource {
+  id: string;
+  title: LocalizedText;
+  format: 'PPTX' | 'PDF';
+  audience: 'facilitator' | 'student' | 'everyone';
+  fileUrl: string;
+  filePath: string;
+  fileSize: string;
 }
 export interface TabooCard {
   concept: LocalizedText;

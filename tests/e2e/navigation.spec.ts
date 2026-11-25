@@ -6,4 +6,11 @@ test('navigates to toolkit and switches language', async ({ page }) => {
   await expect(page.getByRole('heading', { level: 1 })).toContainText('French, beyond');
   await page.getByRole('link', { name: 'Toolkit', exact: true }).click();
   await expect(page.getByRole('heading', { level: 1 })).toHaveText('Toolkit');
+  await page.getByRole('link', { name: 'Workshops', exact: true }).click();
+  await expect(page.getByRole('heading', { name: 'Kickoff — Module Introduction' })).toBeVisible();
+  await page.getByRole('link', { name: 'Open' }).first().click();
+  await expect(page.getByRole('link', { name: /Download resource/ })).toHaveAttribute(
+    'href',
+    /module-introduction.*\.pptx/,
+  );
 });

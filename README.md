@@ -4,7 +4,7 @@
 
 [![CI](https://github.com/cassydjye/module_francais_epitech/actions/workflows/ci.yml/badge.svg)](https://github.com/cassydjye/module_francais_epitech/actions/workflows/ci.yml)
 
-Com'Lab turns historical EPITECH French-language projects into a modern, static learning platform. It includes nine project examples, two workshop plans and seven interactive tools. It has no accounts, backend, analytics or data collection.
+Com'Lab turns historical EPITECH French-language projects into a modern, static learning platform. It includes nine project examples, four presentation-ready workshops and seven interactive tools. It has no accounts, backend, analytics or data collection.
 
 **Website:** <https://cassydjye.github.io/module_francais_epitech/> · [Version française](README.fr.md)
 
@@ -12,7 +12,8 @@ Com'Lab turns historical EPITECH French-language projects into a modern, static 
 
 - Complete French and English interface with a persistent language preference.
 - Searchable project library, dynamic statistics and simple yearly averages.
-- Pitch Taboo, IUS board, reliable presentation timer, email workshop, pitch builder, self-assessment and workshop presentation mode.
+- Downloadable PowerPoint workshops for module kickoff, professional email, technical explanation and responsible AI-assisted writing.
+- Printable Pitch Taboo cards, IUS board, reliable presentation timer, email workshop, pitch builder, self-assessment and workshop presentation mode.
 - Local-only tool data, light/dark themes, responsive navigation and keyboard-friendly controls.
 - Hash-based routing and a GitHub Pages deployment workflow.
 
@@ -37,6 +38,6 @@ Requires Node.js 22 or newer. See [Getting started](docs/GETTING_STARTED.md), [a
 
 ## Academic integrity and rights
 
-Historical work is shared for inspiration and critical review. It is not an official answer key, may contain errors and must not be copied. No licence is granted here for third-party educational material. The original PowerPoint files contain presenter notes and are deliberately not shipped by the website until reviewed.
+Historical work is shared for inspiration and critical review. It is not an official answer key, may contain errors and must not be copied. The Com'Lab workshop decks listed in `resources/workshops` are intentionally published for facilitators and students. No licence is implied for unrelated third-party educational material.
 
 Com'Lab is a personal, unofficial initiative and is not officially affiliated with EPITECH.

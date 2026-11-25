@@ -328,6 +328,36 @@ h3 {
   grid-template-columns: 1fr 1fr;
   gap: 1.5rem;
 }
+.workshop-audiences {
+  margin-bottom: 2rem;
+}
+.audience-card {
+  position: relative;
+  overflow: hidden;
+}
+.audience-card::after {
+  content: '';
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  right: -70px;
+  top: -80px;
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--blue) 14%, transparent);
+}
+.student-card::after {
+  background: color-mix(in srgb, var(--teal) 14%, transparent);
+}
+.resource-summary {
+  padding-top: 0.8rem;
+  border-top: 1px solid var(--border);
+}
+.workshop-resources {
+  padding-bottom: 1rem;
+}
+.resource-card svg {
+  margin-bottom: 1rem;
+}
 .steps {
   counter-reset: item;
   list-style: none;

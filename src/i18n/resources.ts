@@ -73,15 +73,24 @@ export const resources = {
       },
       workshops: {
         title: 'Workshops',
-        intro: 'Des séances structurées pour pratiquer en groupe.',
+        intro:
+          'Des supports prêts à présenter pour les animateurs, et des ressources à revoir librement pour les étudiants.',
+        facilitatorTitle: 'Pour animer le module',
+        facilitatorIntro:
+          'Télécharge le support PowerPoint, projette-le en cours et utilise les outils Com’Lab pendant les activités.',
+        studentTitle: 'Pour revoir et pratiquer',
+        studentIntro:
+          'Retrouve le contenu après la séance, télécharge les ressources et poursuis avec les outils interactifs.',
         duration: 'Durée',
         level: 'Niveau',
         objectives: 'Objectifs',
         steps: 'Déroulement',
         resources: 'Ressources',
         tools: 'Outils associés',
-        withheld:
-          'Le support animateur original n’est pas publié automatiquement : il contient des notes de présentation à auditer.',
+        availableResources: 'Ressources disponibles',
+        presentationReady: 'Prêt à présenter',
+        downloadResource: 'Télécharger la ressource',
+        resourceCount: 'ressource(s)',
       },
       tools: {
         title: 'Boîte à outils',
@@ -198,15 +207,24 @@ export const resources = {
       },
       workshops: {
         title: 'Workshops',
-        intro: 'Structured sessions for group practice.',
+        intro:
+          'Presentation-ready materials for facilitators and resources students can freely revisit.',
+        facilitatorTitle: 'Run the module',
+        facilitatorIntro:
+          'Download the PowerPoint deck, present it in class and use Com’Lab tools during activities.',
+        studentTitle: 'Review and practise',
+        studentIntro:
+          'Revisit the material after class, download resources and continue with the interactive tools.',
         duration: 'Duration',
         level: 'Level',
         objectives: 'Objectives',
         steps: 'Agenda',
         resources: 'Resources',
         tools: 'Related tools',
-        withheld:
-          'The original facilitator deck is not automatically published: it contains presenter notes that require review.',
+        availableResources: 'Available resources',
+        presentationReady: 'Presentation ready',
+        downloadResource: 'Download resource',
+        resourceCount: 'resource(s)',
       },
       tools: {
         title: 'Toolkit',

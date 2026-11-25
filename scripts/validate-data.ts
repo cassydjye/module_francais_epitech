@@ -26,6 +26,13 @@ for (const project of projects) {
   if (!existsSync(resolve(project.filePath)))
     errors.push(`${project.id}: missing ${project.filePath}`);
 }
+for (const workshop of workshops) {
+  if (!workshop.resources.length) errors.push(`${workshop.id}: no public resource`);
+  for (const resource of workshop.resources) {
+    if (!existsSync(resolve(resource.filePath)))
+      errors.push(`${workshop.id}: missing ${resource.filePath}`);
+  }
+}
 if (tabooCards.length < 24) errors.push('At least 24 taboo cards are required');
 if (errors.length) {
   console.error(errors.join('\n'));
