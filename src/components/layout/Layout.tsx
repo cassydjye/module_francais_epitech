@@ -6,7 +6,7 @@ const repo = 'https://github.com/cassydjye/module_francais_epitech';
 export function Layout() {
   const { t, i18n } = useTranslation();
   const [open, setOpen] = useState(false);
-  const [light, setLight] = useState(() => localStorage.getItem('comlab-theme') === 'light');
+  const [light, setLight] = useState(() => localStorage.getItem('comlab-theme') !== 'dark');
   useEffect(() => {
     document.body.classList.toggle('light', light);
     localStorage.setItem('comlab-theme', light ? 'light' : 'dark');
@@ -75,9 +75,6 @@ export function Layout() {
       <footer className="footer">
         <div className="container">
           <span>{t('footer')}</span>
-          <a href={repo} target="_blank" rel="noreferrer">
-            GitHub ↗
-          </a>
         </div>
       </footer>
     </>
