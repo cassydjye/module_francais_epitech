@@ -1,7 +1,7 @@
 :root {
   font-family: Inter, ui-sans-serif, system-ui, sans-serif;
   color: #f8fafc;
-  background: #0b1120;
+  background: #f7f9fc;
   font-synthesis: none;
   --bg: #0b1120;
   --surface: #101827;
@@ -19,12 +19,23 @@
 }
 html {
   scroll-behavior: smooth;
+  min-height: 100%;
 }
 body {
   margin: 0;
   min-width: 320px;
+  min-height: 100vh;
   background: var(--bg);
   color: var(--text);
+}
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg);
+}
+#root > main {
+  flex: 1;
 }
 body.light {
   --bg: #f7f9fc;

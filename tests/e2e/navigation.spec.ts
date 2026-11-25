@@ -15,4 +15,10 @@ test('navigates to toolkit and switches language', async ({ page }) => {
     'href',
     /module-introduction.*\.pptx/,
   );
+  await page.getByRole('link', { name: 'About', exact: true }).click();
+  const footerBottom = await page
+    .locator('footer')
+    .evaluate((footer) => Math.round(footer.getBoundingClientRect().bottom));
+  const viewportHeight = await page.evaluate(() => window.innerHeight);
+  expect(footerBottom).toBe(viewportHeight);
 });
