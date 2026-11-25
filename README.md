@@ -1,81 +1,42 @@
-# 📚 Projets de Français — Epitech
+# Com'Lab
 
-Bienvenue sur mon repository GitHub regroupant mes **projets de français réalisés durant ma formation à Epitech**, en TEK1 (2024) et TEK2 (2025).
+> **Learn. Practice. Improve.** A bilingual communication lab for computer science students.
 
-Ce dépôt a été créé dans un objectif simple : **partager mon travail pour aider d'autres étudiants**, leur donner des pistes de réflexion et des exemples concrets pour réaliser leurs propres projets.
+[![CI](https://github.com/cassydjye/module_francais_epitech/actions/workflows/ci.yml/badge.svg)](https://github.com/cassydjye/module_francais_epitech/actions/workflows/ci.yml)
 
-> ⚠️ **Attention :** mes projets ne sont pas des corrigés officiels et ne sont pas parfaits. Certaines réalisations contiennent des erreurs et ne méritent pas forcément un 20/20. Inspirez-vous-en, mais gardez votre esprit critique !
+Com'Lab turns historical EPITECH French-language projects into a modern, static learning platform. It includes nine project examples, two workshop plans and seven interactive tools. It has no accounts, backend, analytics or data collection.
 
-## 📂 Projets et notes
+**Website:** <https://cassydjye.github.io/module_francais_epitech/> · [Version française](README.fr.md)
 
-### 🎓 TEK1 — Année scolaire 2024
+## Features
 
-| Projet | Note |
-|---|:---:|
-| Professional e-mail | 15/20 |
-| Prepare a review | 17/20 |
-| Argued mail | 11/20 |
-| 3 emails | 19/20 |
-| Writing an user guide | 13/20 |
-| Memo | 17/20 |
+- Complete French and English interface with a persistent language preference.
+- Searchable project library, dynamic statistics and simple yearly averages.
+- Pitch Taboo, IUS board, reliable presentation timer, email workshop, pitch builder, self-assessment and workshop presentation mode.
+- Local-only tool data, light/dark themes, responsive navigation and keyboard-friendly controls.
+- Hash-based routing and a GitHub Pages deployment workflow.
 
-**📊 Moyenne des projets TEK1 : 15,33/20**
+## Project results
 
-### 🎓 TEK2 — Année scolaire 2025
+| Level       | Projects | Simple average |
+| ----------- | -------: | -------------: |
+| TEK1 (2024) |        6 |       15.33/20 |
+| TEK2 (2025) |        3 |       16.67/20 |
 
-| Projet | Note |
-|---|:---:|
-| Delicate Mission - back in line | 16/20 |
-| Slideshow to win $1 million | 17/20 |
-| Experience Report | 17/20 |
+These are simple averages of the displayed projects, not necessarily official module averages.
 
-**📊 Moyenne des projets TEK2 : 16,67/20**
+## Local development
 
-*Les moyennes indiquées correspondent à des moyennes simples des projets présentés, et non nécessairement aux moyennes officielles des modules.*
+```bash
+npm ci
+npm run dev
+npm run check:all
+```
 
-## 🎯 Pourquoi ce repository ?
+Requires Node.js 22 or newer. See [Getting started](docs/GETTING_STARTED.md), [architecture](docs/ARCHITECTURE.md), [testing](docs/TESTING.md) and [deployment](docs/DEPLOYMENT.md).
 
-L'objectif de ce dépôt est de favoriser **l'entraide entre étudiants**.
+## Academic integrity and rights
 
-Vous pouvez l'utiliser pour :
+Historical work is shared for inspiration and critical review. It is not an official answer key, may contain errors and must not be copied. No licence is granted here for third-party educational material. The original PowerPoint files contain presenter notes and are deliberately not shipped by the website until reviewed.
 
-- ✅ Comprendre les attentes et les formats des projets.
-- ✅ Découvrir des exemples de réalisations.
-- ✅ Trouver de l'inspiration et des idées.
-- ✅ Identifier des erreurs à éviter.
-- ✅ Comparer différentes approches pour améliorer vos propres travaux.
-
-## ⚠️ Avertissement — Plagiat et fiabilité
-
-**Ce repository est mis à disposition uniquement à titre pédagogique.**
-
-Tous les travaux présents ici sont issus de mes propres réalisations et reflètent mon niveau au moment où je les ai effectués.
-
-**Quelques points importants :**
-
-- ❌ **Ne recopiez pas mes projets à 100 %.** Le but n'est pas de rendre mon travail à votre place.
-- ❌ **Ne vous appropriez pas mes réalisations.** Merci de respecter le temps et les efforts investis.
-- ❌ **Ne considérez pas ces projets comme des corrigés parfaits.** Même les projets ayant obtenu de bonnes notes peuvent contenir des erreurs.
-- ✅ **Inspirez-vous et faites mieux !** Analysez les exemples, comprenez les méthodes et construisez vos propres réponses.
-
-### 📊 Concernant les notes
-
-Les notes affichées sont celles que j'ai personnellement obtenues lors de mes évaluations.
-
-**Une bonne note ne garantit pas un projet sans erreur et un projet moins bien noté peut tout de même contenir des éléments intéressants.**
-
-Les consignes, les attentes et les barèmes peuvent également évoluer d'une année à l'autre.
-
-## 🤝 Un dépôt pour l'entraide
-
-Si mes travaux peuvent vous aider à mieux comprendre un projet, à débloquer une idée ou à progresser, alors ce repository aura rempli son objectif.
-
-N'hésitez pas à consulter les différents projets et à vous en inspirer intelligemment.
-
-**Le meilleur moyen de réussir reste de comprendre ce que vous faites et de produire votre propre travail.**
-
----
-
-### 💡 Inspirez-vous, apprenez, améliorez… mais ne plagiez pas !
-
-*Repository personnel et non officiel — Non affilié à Epitech.*
+Com'Lab is a personal, unofficial initiative and is not officially affiliated with EPITECH.

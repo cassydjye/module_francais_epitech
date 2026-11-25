@@ -1,0 +1,31 @@
+import type { TabooCard } from '../types/content';
+const names = [
+  ['API', 'interface,requête,service', 'interface,request,service'],
+  ['Algorithme', 'étapes,calcul,programme', 'steps,calculation,program'],
+  ['Base de données', 'table,SQL,stockage', 'table,SQL,storage'],
+  ['Serveur', 'client,réseau,héberger', 'client,network,host'],
+  ['Cloud', 'internet,distant,serveur', 'internet,remote,server'],
+  ['Pare-feu', 'sécurité,bloquer,réseau', 'security,block,network'],
+  ['Git', 'version,commit,dépôt', 'version,commit,repository'],
+  ['Intelligence artificielle', 'machine,données,apprendre', 'machine,data,learn'],
+  ['Fonction', 'paramètre,retour,appel', 'parameter,return,call'],
+  ['Variable', 'valeur,nom,stockage', 'value,name,storage'],
+  ['Bug', 'erreur,problème,corriger', 'error,problem,fix'],
+  ['Framework', 'bibliothèque,structure,code', 'library,structure,code'],
+  ['Navigateur', 'web,page,Chrome', 'web,page,Chrome'],
+  ['Compilation', 'code,binaire,transformer', 'code,binary,transform'],
+  ['Chiffrement', 'sécurité,clé,secret', 'security,key,secret'],
+  ['Conteneur', 'Docker,image,isolation', 'Docker,image,isolation'],
+  ['Cache', 'mémoire,rapide,temporaire', 'memory,fast,temporary'],
+  ['Terminal', 'commande,texte,shell', 'command,text,shell'],
+  ['Open source', 'libre,code,licence', 'free,code,licence'],
+  ['Responsive', 'mobile,écran,adaptatif', 'mobile,screen,adaptive'],
+  ['Cookie', 'navigateur,session,traceur', 'browser,session,tracker'],
+  ['DNS', 'domaine,adresse,IP', 'domain,address,IP'],
+  ['Boucle', 'répéter,itération,condition', 'repeat,iteration,condition'],
+  ['Test unitaire', 'fonction,vérifier,automatique', 'function,verify,automatic'],
+];
+export const tabooCards: TabooCard[] = names.map(([concept, fr, en]) => ({
+  concept: { fr: concept!, en: concept! },
+  forbidden: { fr: fr!.split(','), en: en!.split(',') },
+}));
